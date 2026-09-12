@@ -1,0 +1,175 @@
+$comment
+	File created using the following command:
+		vcd file ALUmod2.msim.vcd -direction
+$end
+$date
+	Sat Nov 29 19:36:47 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ALUmod2_vlg_vec_tst $end
+$var reg 8 ! A [7:0] $end
+$var reg 8 " B [7:0] $end
+$var reg 1 # clock $end
+$var reg 16 $ OP [15:0] $end
+$var reg 4 % student_id [3:0] $end
+$var wire 1 & R [3] $end
+$var wire 1 ' R [2] $end
+$var wire 1 ( R [1] $end
+$var wire 1 ) R [0] $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 clock~combout $end
+$var wire 1 2 R[0]~reg0feeder_combout $end
+$var wire 1 3 R[0]~reg0_regout $end
+$var wire 1 4 student_id~combout [3] $end
+$var wire 1 5 student_id~combout [2] $end
+$var wire 1 6 student_id~combout [1] $end
+$var wire 1 7 student_id~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+b0 $
+b101 %
+0)
+0(
+0'
+0&
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+12
+03
+17
+z6
+z5
+z4
+$end
+#40000
+1#
+11
+0*
+13
+1)
+#80000
+0#
+01
+1*
+#120000
+1#
+11
+0*
+#160000
+b1 %
+b0 %
+0#
+07
+01
+1*
+02
+#200000
+1#
+11
+0*
+03
+0)
+#240000
+b1 %
+0#
+17
+01
+1*
+12
+#280000
+1#
+11
+0*
+13
+1)
+#320000
+b11 %
+0#
+01
+1*
+#360000
+1#
+11
+0*
+#400000
+b10 %
+b0 %
+0#
+07
+01
+1*
+02
+#440000
+1#
+11
+0*
+03
+0)
+#480000
+b100 %
+b110 %
+0#
+01
+1*
+#520000
+1#
+11
+0*
+#560000
+b10 %
+0#
+01
+1*
+#600000
+1#
+11
+0*
+#640000
+b11 %
+b1 %
+b101 %
+0#
+17
+01
+1*
+12
+#680000
+1#
+11
+0*
+13
+1)
+#720000
+b111 %
+0#
+01
+1*
+#760000
+1#
+11
+0*
+#800000

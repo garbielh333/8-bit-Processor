@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "R_first_four[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R_first_four[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R_last_four[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R_sign[6]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[0]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[1]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[2]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[3]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[4]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[5]",
+					"strict" : false
+				},
+				{
+					"name" : "std_id[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "dec_en",
+					"strict" : false
+				},
+				{
+					"name" : "FSM_reset",
+					"strict" : false
+				},
+				{
+					"name" : "data_in",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_B",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_A",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

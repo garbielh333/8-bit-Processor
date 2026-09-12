@@ -1,0 +1,33 @@
+S 0 2
+P 8 6 105 0  50203 0 666091 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+J 1 112689 17.763083 12 6144 0 0 1 0
+J 2 113563 17.900851 19 0 0 0 1 0
+J 3 113563 17.900851 19 0 0 0 1 0
+J 4 113563 17.900851 19 0 0 0 1 0
+J 5 113563 17.900851 19 0 0 0 1 0
+J 6 99150 15.628941 17 0 0 0 1 0
+O c:/altera_lite/25.1std/questa_fse/win64/voptk2.exe
+O -refresh
+O -jsubproc
+O -nolock
+O -stats=none
+O -nologo
+O -allow_unnamed
+O -suppress
+O 1979
+O -suppress
+O 167
+O -o
+O _opt
+O -work
+O work
+O -quiet
+O -opt=nocgRM
+O -jmem_size
+O 26493360
+O -noenableprofile
+O -enableprofile1
+DPI_GLOBALS 0 0
+VOPT_STATS 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+LOCKED_FILE C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/work _opt__lock 1-44fa6626d11b-6aa5c5d5-2fa-6de4
+VHDL_GLOBALS 0

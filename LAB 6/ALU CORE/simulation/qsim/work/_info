@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Projects\COE328\LAB 6\ALU CORE\simulation\qsim
+vALU
+Z1 !s100 <g?YaMKQb[LcO3QIY;i?g1
+Z2 I3zYgU8gnVdoQXzdE?N5gU2
+Z3 VoAW6fjc1J?c>m13<hdd?z1
+Z4 dC:\altera\13.0sp1\Projects\COE328\LAB 6\ALU CORE\simulation\qsim
+Z5 w1764170744
+Z6 8alucore.vo
+Z7 Falucore.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|alucore.vo|
+Z10 o-work work -O0
+Z11 n@a@l@u
+!i10b 1
+!s85 0
+Z12 !s108 1764170745.374000
+Z13 !s107 alucore.vo|
+!s101 -O0
+vALU_vlg_check_tst
+!i10b 1
+Z14 !s100 Y6RkMEZic5G5cdjE9bbWA1
+Z15 I=czPL`LW9?hFf69SEAH<>2
+Z16 VmL>_RdjC<PzZ80TjQa:I21
+R4
+R5
+Z17 8alucore.vt
+Z18 Falucore.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1764170745.430000
+Z20 !s107 alucore.vt|
+Z21 !s90 -work|work|alucore.vt|
+!s101 -O0
+R10
+Z22 n@a@l@u_vlg_check_tst
+vALU_vlg_sample_tst
+!i10b 1
+Z23 !s100 Bgg:CXR?_N>:VVcVf::4^3
+Z24 I5TDU<LIGATLK4NkVEVaBY2
+Z25 V3^DbGh2MdSSJkl;<Ac6G31
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@a@l@u_vlg_sample_tst
+vALU_vlg_vec_tst
+!i10b 1
+!s100 hQ:R;20mzQNV96T>ghdVO3
+I=YKWf89?4WXg`][K=ncaE1
+Z27 V>bFnnU[^IecCM5^<l3;]W0
+R4
+R5
+R17
+R18
+Z28 L0 320
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@a@l@u_vlg_vec_tst

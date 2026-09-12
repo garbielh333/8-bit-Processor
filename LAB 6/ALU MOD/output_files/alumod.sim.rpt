@@ -1,0 +1,555 @@
+Simulator report for alumod
+Sat Nov 29 16:45:07 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 800.0 ns     ;
+; Simulation Netlist Size     ; 240 nodes    ;
+; Simulation Coverage         ;      29.66 % ;
+; Total Number of Transitions ; 287          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                            ;               ;
+; Vector input source                                                                        ; C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/ALU MOD/alumodwaveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                             ; On            ;
+; Check outputs                                                                              ; Off                                                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                           ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      29.66 % ;
+; Total nodes checked                                 ; 240          ;
+; Total output ports checked                          ; 236          ;
+; Total output ports with complete 1/0-value coverage ; 70           ;
+; Total output ports with no 1/0-value coverage       ; 157          ;
+; Total output ports with no 1-value coverage         ; 157          ;
+; Total output ports with no 0-value coverage         ; 166          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                  ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |ALUmod|Result[2]   ; |ALUmod|Result[2]   ; regout           ;
+; |ALUmod|Result[1]   ; |ALUmod|Result[1]   ; regout           ;
+; |ALUmod|Result[0]   ; |ALUmod|Result[0]   ; regout           ;
+; |ALUmod|Result~16   ; |ALUmod|Result~16   ; out0             ;
+; |ALUmod|Result[3]   ; |ALUmod|Result[3]   ; regout           ;
+; |ALUmod|Result[4]   ; |ALUmod|Result[4]   ; regout           ;
+; |ALUmod|Result[5]   ; |ALUmod|Result[5]   ; regout           ;
+; |ALUmod|Result[6]   ; |ALUmod|Result[6]   ; regout           ;
+; |ALUmod|Result[7]   ; |ALUmod|Result[7]   ; regout           ;
+; |ALUmod|clock       ; |ALUmod|clock       ; out              ;
+; |ALUmod|OP[0]       ; |ALUmod|OP[0]       ; out              ;
+; |ALUmod|OP[1]       ; |ALUmod|OP[1]       ; out              ;
+; |ALUmod|OP[2]       ; |ALUmod|OP[2]       ; out              ;
+; |ALUmod|OP[3]       ; |ALUmod|OP[3]       ; out              ;
+; |ALUmod|OP[4]       ; |ALUmod|OP[4]       ; out              ;
+; |ALUmod|OP[5]       ; |ALUmod|OP[5]       ; out              ;
+; |ALUmod|OP[6]       ; |ALUmod|OP[6]       ; out              ;
+; |ALUmod|OP[7]       ; |ALUmod|OP[7]       ; out              ;
+; |ALUmod|R1[0]       ; |ALUmod|R1[0]       ; pin_out          ;
+; |ALUmod|R1[1]       ; |ALUmod|R1[1]       ; pin_out          ;
+; |ALUmod|R1[2]       ; |ALUmod|R1[2]       ; pin_out          ;
+; |ALUmod|R1[3]       ; |ALUmod|R1[3]       ; pin_out          ;
+; |ALUmod|R2[0]       ; |ALUmod|R2[0]       ; pin_out          ;
+; |ALUmod|R2[1]       ; |ALUmod|R2[1]       ; pin_out          ;
+; |ALUmod|R2[2]       ; |ALUmod|R2[2]       ; pin_out          ;
+; |ALUmod|R2[3]       ; |ALUmod|R2[3]       ; pin_out          ;
+; |ALUmod|Selector0~0 ; |ALUmod|Selector0~0 ; out0             ;
+; |ALUmod|Selector0~2 ; |ALUmod|Selector0~2 ; out0             ;
+; |ALUmod|Selector0~4 ; |ALUmod|Selector0~4 ; out0             ;
+; |ALUmod|Selector0~5 ; |ALUmod|Selector0~5 ; out0             ;
+; |ALUmod|Selector1~0 ; |ALUmod|Selector1~0 ; out0             ;
+; |ALUmod|Selector1~4 ; |ALUmod|Selector1~4 ; out0             ;
+; |ALUmod|Selector1~6 ; |ALUmod|Selector1~6 ; out0             ;
+; |ALUmod|Selector1~7 ; |ALUmod|Selector1~7 ; out0             ;
+; |ALUmod|Selector2~0 ; |ALUmod|Selector2~0 ; out0             ;
+; |ALUmod|Selector2~5 ; |ALUmod|Selector2~5 ; out0             ;
+; |ALUmod|Selector2~6 ; |ALUmod|Selector2~6 ; out0             ;
+; |ALUmod|Selector2~7 ; |ALUmod|Selector2~7 ; out0             ;
+; |ALUmod|Selector3~0 ; |ALUmod|Selector3~0 ; out0             ;
+; |ALUmod|Selector3~4 ; |ALUmod|Selector3~4 ; out0             ;
+; |ALUmod|Selector3~8 ; |ALUmod|Selector3~8 ; out0             ;
+; |ALUmod|Selector4~0 ; |ALUmod|Selector4~0 ; out0             ;
+; |ALUmod|Selector4~2 ; |ALUmod|Selector4~2 ; out0             ;
+; |ALUmod|Selector4~3 ; |ALUmod|Selector4~3 ; out0             ;
+; |ALUmod|Selector4~6 ; |ALUmod|Selector4~6 ; out0             ;
+; |ALUmod|Selector4~7 ; |ALUmod|Selector4~7 ; out0             ;
+; |ALUmod|Selector4~8 ; |ALUmod|Selector4~8 ; out0             ;
+; |ALUmod|Selector4~9 ; |ALUmod|Selector4~9 ; out0             ;
+; |ALUmod|Selector5~0 ; |ALUmod|Selector5~0 ; out0             ;
+; |ALUmod|Selector5~4 ; |ALUmod|Selector5~4 ; out0             ;
+; |ALUmod|Selector5~5 ; |ALUmod|Selector5~5 ; out0             ;
+; |ALUmod|Selector6~0 ; |ALUmod|Selector6~0 ; out0             ;
+; |ALUmod|Selector6~2 ; |ALUmod|Selector6~2 ; out0             ;
+; |ALUmod|Selector6~3 ; |ALUmod|Selector6~3 ; out0             ;
+; |ALUmod|Selector6~5 ; |ALUmod|Selector6~5 ; out0             ;
+; |ALUmod|Selector6~8 ; |ALUmod|Selector6~8 ; out0             ;
+; |ALUmod|Selector6~9 ; |ALUmod|Selector6~9 ; out0             ;
+; |ALUmod|Selector7~0 ; |ALUmod|Selector7~0 ; out0             ;
+; |ALUmod|Selector7~4 ; |ALUmod|Selector7~4 ; out0             ;
+; |ALUmod|Selector7~5 ; |ALUmod|Selector7~5 ; out0             ;
+; |ALUmod|Selector7~7 ; |ALUmod|Selector7~7 ; out0             ;
+; |ALUmod|Selector7~9 ; |ALUmod|Selector7~9 ; out0             ;
+; |ALUmod|Equal0~0    ; |ALUmod|Equal0~0    ; out0             ;
+; |ALUmod|Equal1~0    ; |ALUmod|Equal1~0    ; out0             ;
+; |ALUmod|Equal2~0    ; |ALUmod|Equal2~0    ; out0             ;
+; |ALUmod|Equal3~0    ; |ALUmod|Equal3~0    ; out0             ;
+; |ALUmod|Equal4~0    ; |ALUmod|Equal4~0    ; out0             ;
+; |ALUmod|Equal5~0    ; |ALUmod|Equal5~0    ; out0             ;
+; |ALUmod|Equal6~0    ; |ALUmod|Equal6~0    ; out0             ;
+; |ALUmod|Equal7~0    ; |ALUmod|Equal7~0    ; out0             ;
++---------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |ALUmod|Result~0     ; |ALUmod|Result~0     ; out              ;
+; |ALUmod|Result~1     ; |ALUmod|Result~1     ; out              ;
+; |ALUmod|Result~2     ; |ALUmod|Result~2     ; out              ;
+; |ALUmod|Result~3     ; |ALUmod|Result~3     ; out              ;
+; |ALUmod|Result~4     ; |ALUmod|Result~4     ; out              ;
+; |ALUmod|Result~5     ; |ALUmod|Result~5     ; out              ;
+; |ALUmod|Result~6     ; |ALUmod|Result~6     ; out              ;
+; |ALUmod|Result~7     ; |ALUmod|Result~7     ; out              ;
+; |ALUmod|Result~8     ; |ALUmod|Result~8     ; out0             ;
+; |ALUmod|Result~9     ; |ALUmod|Result~9     ; out0             ;
+; |ALUmod|Result~10    ; |ALUmod|Result~10    ; out0             ;
+; |ALUmod|Result~11    ; |ALUmod|Result~11    ; out0             ;
+; |ALUmod|Result~12    ; |ALUmod|Result~12    ; out0             ;
+; |ALUmod|Result~13    ; |ALUmod|Result~13    ; out0             ;
+; |ALUmod|Result~14    ; |ALUmod|Result~14    ; out0             ;
+; |ALUmod|Result~15    ; |ALUmod|Result~15    ; out0             ;
+; |ALUmod|A[0]         ; |ALUmod|A[0]         ; out              ;
+; |ALUmod|A[1]         ; |ALUmod|A[1]         ; out              ;
+; |ALUmod|A[2]         ; |ALUmod|A[2]         ; out              ;
+; |ALUmod|A[3]         ; |ALUmod|A[3]         ; out              ;
+; |ALUmod|A[4]         ; |ALUmod|A[4]         ; out              ;
+; |ALUmod|A[5]         ; |ALUmod|A[5]         ; out              ;
+; |ALUmod|A[6]         ; |ALUmod|A[6]         ; out              ;
+; |ALUmod|A[7]         ; |ALUmod|A[7]         ; out              ;
+; |ALUmod|B[0]         ; |ALUmod|B[0]         ; out              ;
+; |ALUmod|B[1]         ; |ALUmod|B[1]         ; out              ;
+; |ALUmod|B[2]         ; |ALUmod|B[2]         ; out              ;
+; |ALUmod|B[3]         ; |ALUmod|B[3]         ; out              ;
+; |ALUmod|B[4]         ; |ALUmod|B[4]         ; out              ;
+; |ALUmod|B[5]         ; |ALUmod|B[5]         ; out              ;
+; |ALUmod|B[6]         ; |ALUmod|B[6]         ; out              ;
+; |ALUmod|B[7]         ; |ALUmod|B[7]         ; out              ;
+; |ALUmod|OP[9]        ; |ALUmod|OP[9]        ; out              ;
+; |ALUmod|OP[10]       ; |ALUmod|OP[10]       ; out              ;
+; |ALUmod|OP[11]       ; |ALUmod|OP[11]       ; out              ;
+; |ALUmod|OP[12]       ; |ALUmod|OP[12]       ; out              ;
+; |ALUmod|OP[13]       ; |ALUmod|OP[13]       ; out              ;
+; |ALUmod|OP[14]       ; |ALUmod|OP[14]       ; out              ;
+; |ALUmod|OP[15]       ; |ALUmod|OP[15]       ; out              ;
+; |ALUmod|Selector0~1  ; |ALUmod|Selector0~1  ; out0             ;
+; |ALUmod|Selector0~3  ; |ALUmod|Selector0~3  ; out0             ;
+; |ALUmod|Selector0~6  ; |ALUmod|Selector0~6  ; out0             ;
+; |ALUmod|Selector0~7  ; |ALUmod|Selector0~7  ; out0             ;
+; |ALUmod|Selector1~1  ; |ALUmod|Selector1~1  ; out0             ;
+; |ALUmod|Selector1~2  ; |ALUmod|Selector1~2  ; out0             ;
+; |ALUmod|Selector1~3  ; |ALUmod|Selector1~3  ; out0             ;
+; |ALUmod|Selector1~5  ; |ALUmod|Selector1~5  ; out0             ;
+; |ALUmod|Selector2~2  ; |ALUmod|Selector2~2  ; out0             ;
+; |ALUmod|Selector2~3  ; |ALUmod|Selector2~3  ; out0             ;
+; |ALUmod|Selector2~4  ; |ALUmod|Selector2~4  ; out0             ;
+; |ALUmod|Selector2~8  ; |ALUmod|Selector2~8  ; out0             ;
+; |ALUmod|Selector3~2  ; |ALUmod|Selector3~2  ; out0             ;
+; |ALUmod|Selector3~3  ; |ALUmod|Selector3~3  ; out0             ;
+; |ALUmod|Selector3~5  ; |ALUmod|Selector3~5  ; out0             ;
+; |ALUmod|Selector3~6  ; |ALUmod|Selector3~6  ; out0             ;
+; |ALUmod|Selector3~7  ; |ALUmod|Selector3~7  ; out0             ;
+; |ALUmod|Selector4~4  ; |ALUmod|Selector4~4  ; out0             ;
+; |ALUmod|Selector4~5  ; |ALUmod|Selector4~5  ; out0             ;
+; |ALUmod|Selector5~2  ; |ALUmod|Selector5~2  ; out0             ;
+; |ALUmod|Selector5~3  ; |ALUmod|Selector5~3  ; out0             ;
+; |ALUmod|Selector5~6  ; |ALUmod|Selector5~6  ; out0             ;
+; |ALUmod|Selector5~7  ; |ALUmod|Selector5~7  ; out0             ;
+; |ALUmod|Selector5~8  ; |ALUmod|Selector5~8  ; out0             ;
+; |ALUmod|Selector5~9  ; |ALUmod|Selector5~9  ; out0             ;
+; |ALUmod|Selector6~4  ; |ALUmod|Selector6~4  ; out0             ;
+; |ALUmod|Selector6~6  ; |ALUmod|Selector6~6  ; out0             ;
+; |ALUmod|Selector6~7  ; |ALUmod|Selector6~7  ; out0             ;
+; |ALUmod|Selector7~2  ; |ALUmod|Selector7~2  ; out0             ;
+; |ALUmod|Selector7~3  ; |ALUmod|Selector7~3  ; out0             ;
+; |ALUmod|Selector7~6  ; |ALUmod|Selector7~6  ; out0             ;
+; |ALUmod|Selector7~8  ; |ALUmod|Selector7~8  ; out0             ;
+; |ALUmod|LessThan0~0  ; |ALUmod|LessThan0~0  ; out0             ;
+; |ALUmod|LessThan0~1  ; |ALUmod|LessThan0~1  ; out0             ;
+; |ALUmod|LessThan0~2  ; |ALUmod|LessThan0~2  ; out0             ;
+; |ALUmod|LessThan0~3  ; |ALUmod|LessThan0~3  ; out0             ;
+; |ALUmod|LessThan0~4  ; |ALUmod|LessThan0~4  ; out0             ;
+; |ALUmod|LessThan0~5  ; |ALUmod|LessThan0~5  ; out0             ;
+; |ALUmod|LessThan0~6  ; |ALUmod|LessThan0~6  ; out0             ;
+; |ALUmod|LessThan0~7  ; |ALUmod|LessThan0~7  ; out0             ;
+; |ALUmod|LessThan0~8  ; |ALUmod|LessThan0~8  ; out0             ;
+; |ALUmod|LessThan0~9  ; |ALUmod|LessThan0~9  ; out0             ;
+; |ALUmod|LessThan0~10 ; |ALUmod|LessThan0~10 ; out0             ;
+; |ALUmod|LessThan0~11 ; |ALUmod|LessThan0~11 ; out0             ;
+; |ALUmod|LessThan0~12 ; |ALUmod|LessThan0~12 ; out0             ;
+; |ALUmod|LessThan0~13 ; |ALUmod|LessThan0~13 ; out0             ;
+; |ALUmod|LessThan0~14 ; |ALUmod|LessThan0~14 ; out0             ;
+; |ALUmod|LessThan0~15 ; |ALUmod|LessThan0~15 ; out0             ;
+; |ALUmod|LessThan0~16 ; |ALUmod|LessThan0~16 ; out0             ;
+; |ALUmod|LessThan0~17 ; |ALUmod|LessThan0~17 ; out0             ;
+; |ALUmod|LessThan0~18 ; |ALUmod|LessThan0~18 ; out0             ;
+; |ALUmod|LessThan0~19 ; |ALUmod|LessThan0~19 ; out0             ;
+; |ALUmod|LessThan0~20 ; |ALUmod|LessThan0~20 ; out0             ;
+; |ALUmod|LessThan0~21 ; |ALUmod|LessThan0~21 ; out0             ;
+; |ALUmod|LessThan0~22 ; |ALUmod|LessThan0~22 ; out0             ;
+; |ALUmod|LessThan0~23 ; |ALUmod|LessThan0~23 ; out0             ;
+; |ALUmod|LessThan0~24 ; |ALUmod|LessThan0~24 ; out0             ;
+; |ALUmod|LessThan0~25 ; |ALUmod|LessThan0~25 ; out0             ;
+; |ALUmod|LessThan0~26 ; |ALUmod|LessThan0~26 ; out0             ;
+; |ALUmod|LessThan0~27 ; |ALUmod|LessThan0~27 ; out0             ;
+; |ALUmod|LessThan0~28 ; |ALUmod|LessThan0~28 ; out0             ;
+; |ALUmod|Add0~0       ; |ALUmod|Add0~0       ; out0             ;
+; |ALUmod|Add0~1       ; |ALUmod|Add0~1       ; out0             ;
+; |ALUmod|Add0~2       ; |ALUmod|Add0~2       ; out0             ;
+; |ALUmod|Add0~3       ; |ALUmod|Add0~3       ; out0             ;
+; |ALUmod|Add0~4       ; |ALUmod|Add0~4       ; out0             ;
+; |ALUmod|Add0~5       ; |ALUmod|Add0~5       ; out0             ;
+; |ALUmod|Add0~6       ; |ALUmod|Add0~6       ; out0             ;
+; |ALUmod|Add0~7       ; |ALUmod|Add0~7       ; out0             ;
+; |ALUmod|Add0~8       ; |ALUmod|Add0~8       ; out0             ;
+; |ALUmod|Add0~9       ; |ALUmod|Add0~9       ; out0             ;
+; |ALUmod|Add0~10      ; |ALUmod|Add0~10      ; out0             ;
+; |ALUmod|Add1~0       ; |ALUmod|Add1~0       ; out0             ;
+; |ALUmod|Add1~1       ; |ALUmod|Add1~1       ; out0             ;
+; |ALUmod|Add1~2       ; |ALUmod|Add1~2       ; out0             ;
+; |ALUmod|Add1~3       ; |ALUmod|Add1~3       ; out0             ;
+; |ALUmod|Add1~4       ; |ALUmod|Add1~4       ; out0             ;
+; |ALUmod|Add1~5       ; |ALUmod|Add1~5       ; out0             ;
+; |ALUmod|Add1~6       ; |ALUmod|Add1~6       ; out0             ;
+; |ALUmod|Add1~7       ; |ALUmod|Add1~7       ; out0             ;
+; |ALUmod|Add1~8       ; |ALUmod|Add1~8       ; out0             ;
+; |ALUmod|Add1~9       ; |ALUmod|Add1~9       ; out0             ;
+; |ALUmod|Add1~10      ; |ALUmod|Add1~10      ; out0             ;
+; |ALUmod|Add1~11      ; |ALUmod|Add1~11      ; out0             ;
+; |ALUmod|Add1~12      ; |ALUmod|Add1~12      ; out0             ;
+; |ALUmod|Add1~13      ; |ALUmod|Add1~13      ; out0             ;
+; |ALUmod|Add1~14      ; |ALUmod|Add1~14      ; out0             ;
+; |ALUmod|Add1~15      ; |ALUmod|Add1~15      ; out0             ;
+; |ALUmod|Add1~16      ; |ALUmod|Add1~16      ; out0             ;
+; |ALUmod|Add1~17      ; |ALUmod|Add1~17      ; out0             ;
+; |ALUmod|Add1~18      ; |ALUmod|Add1~18      ; out0             ;
+; |ALUmod|Add1~19      ; |ALUmod|Add1~19      ; out0             ;
+; |ALUmod|Add1~20      ; |ALUmod|Add1~20      ; out0             ;
+; |ALUmod|Add1~21      ; |ALUmod|Add1~21      ; out0             ;
+; |ALUmod|Add1~22      ; |ALUmod|Add1~22      ; out0             ;
+; |ALUmod|Add1~23      ; |ALUmod|Add1~23      ; out0             ;
+; |ALUmod|Add1~24      ; |ALUmod|Add1~24      ; out0             ;
+; |ALUmod|Add1~25      ; |ALUmod|Add1~25      ; out0             ;
+; |ALUmod|Add1~26      ; |ALUmod|Add1~26      ; out0             ;
+; |ALUmod|Add1~27      ; |ALUmod|Add1~27      ; out0             ;
+; |ALUmod|Add1~28      ; |ALUmod|Add1~28      ; out0             ;
+; |ALUmod|Add1~29      ; |ALUmod|Add1~29      ; out0             ;
+; |ALUmod|Add1~30      ; |ALUmod|Add1~30      ; out0             ;
+; |ALUmod|Add1~31      ; |ALUmod|Add1~31      ; out0             ;
+; |ALUmod|Add1~32      ; |ALUmod|Add1~32      ; out0             ;
+; |ALUmod|Add2~0       ; |ALUmod|Add2~0       ; out0             ;
+; |ALUmod|Add2~1       ; |ALUmod|Add2~1       ; out0             ;
+; |ALUmod|Add2~2       ; |ALUmod|Add2~2       ; out0             ;
+; |ALUmod|Add2~3       ; |ALUmod|Add2~3       ; out0             ;
+; |ALUmod|Add2~4       ; |ALUmod|Add2~4       ; out0             ;
+; |ALUmod|Add2~5       ; |ALUmod|Add2~5       ; out0             ;
+; |ALUmod|Add2~6       ; |ALUmod|Add2~6       ; out0             ;
+; |ALUmod|Add2~7       ; |ALUmod|Add2~7       ; out0             ;
+; |ALUmod|Add2~8       ; |ALUmod|Add2~8       ; out0             ;
+; |ALUmod|Add2~9       ; |ALUmod|Add2~9       ; out0             ;
+; |ALUmod|Add2~10      ; |ALUmod|Add2~10      ; out0             ;
+; |ALUmod|Add2~11      ; |ALUmod|Add2~11      ; out0             ;
+; |ALUmod|Add2~12      ; |ALUmod|Add2~12      ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |ALUmod|Result~0     ; |ALUmod|Result~0     ; out              ;
+; |ALUmod|Result~1     ; |ALUmod|Result~1     ; out              ;
+; |ALUmod|Result~2     ; |ALUmod|Result~2     ; out              ;
+; |ALUmod|Result~3     ; |ALUmod|Result~3     ; out              ;
+; |ALUmod|Result~4     ; |ALUmod|Result~4     ; out              ;
+; |ALUmod|Result~5     ; |ALUmod|Result~5     ; out              ;
+; |ALUmod|Result~6     ; |ALUmod|Result~6     ; out              ;
+; |ALUmod|Result~7     ; |ALUmod|Result~7     ; out              ;
+; |ALUmod|Result~8     ; |ALUmod|Result~8     ; out0             ;
+; |ALUmod|Result~9     ; |ALUmod|Result~9     ; out0             ;
+; |ALUmod|Result~10    ; |ALUmod|Result~10    ; out0             ;
+; |ALUmod|Result~11    ; |ALUmod|Result~11    ; out0             ;
+; |ALUmod|Result~12    ; |ALUmod|Result~12    ; out0             ;
+; |ALUmod|Result~13    ; |ALUmod|Result~13    ; out0             ;
+; |ALUmod|Result~14    ; |ALUmod|Result~14    ; out0             ;
+; |ALUmod|Result~15    ; |ALUmod|Result~15    ; out0             ;
+; |ALUmod|WideNor0     ; |ALUmod|WideNor0     ; out0             ;
+; |ALUmod|A[0]         ; |ALUmod|A[0]         ; out              ;
+; |ALUmod|A[1]         ; |ALUmod|A[1]         ; out              ;
+; |ALUmod|A[2]         ; |ALUmod|A[2]         ; out              ;
+; |ALUmod|A[3]         ; |ALUmod|A[3]         ; out              ;
+; |ALUmod|A[4]         ; |ALUmod|A[4]         ; out              ;
+; |ALUmod|A[5]         ; |ALUmod|A[5]         ; out              ;
+; |ALUmod|A[6]         ; |ALUmod|A[6]         ; out              ;
+; |ALUmod|A[7]         ; |ALUmod|A[7]         ; out              ;
+; |ALUmod|B[0]         ; |ALUmod|B[0]         ; out              ;
+; |ALUmod|B[1]         ; |ALUmod|B[1]         ; out              ;
+; |ALUmod|B[2]         ; |ALUmod|B[2]         ; out              ;
+; |ALUmod|B[3]         ; |ALUmod|B[3]         ; out              ;
+; |ALUmod|B[4]         ; |ALUmod|B[4]         ; out              ;
+; |ALUmod|B[5]         ; |ALUmod|B[5]         ; out              ;
+; |ALUmod|B[6]         ; |ALUmod|B[6]         ; out              ;
+; |ALUmod|B[7]         ; |ALUmod|B[7]         ; out              ;
+; |ALUmod|OP[8]        ; |ALUmod|OP[8]        ; out              ;
+; |ALUmod|OP[9]        ; |ALUmod|OP[9]        ; out              ;
+; |ALUmod|OP[10]       ; |ALUmod|OP[10]       ; out              ;
+; |ALUmod|OP[11]       ; |ALUmod|OP[11]       ; out              ;
+; |ALUmod|OP[12]       ; |ALUmod|OP[12]       ; out              ;
+; |ALUmod|OP[13]       ; |ALUmod|OP[13]       ; out              ;
+; |ALUmod|OP[14]       ; |ALUmod|OP[14]       ; out              ;
+; |ALUmod|OP[15]       ; |ALUmod|OP[15]       ; out              ;
+; |ALUmod|Selector0~1  ; |ALUmod|Selector0~1  ; out0             ;
+; |ALUmod|Selector0~3  ; |ALUmod|Selector0~3  ; out0             ;
+; |ALUmod|Selector0~6  ; |ALUmod|Selector0~6  ; out0             ;
+; |ALUmod|Selector0~7  ; |ALUmod|Selector0~7  ; out0             ;
+; |ALUmod|Selector1~1  ; |ALUmod|Selector1~1  ; out0             ;
+; |ALUmod|Selector1~2  ; |ALUmod|Selector1~2  ; out0             ;
+; |ALUmod|Selector1~3  ; |ALUmod|Selector1~3  ; out0             ;
+; |ALUmod|Selector1~5  ; |ALUmod|Selector1~5  ; out0             ;
+; |ALUmod|Selector2~1  ; |ALUmod|Selector2~1  ; out0             ;
+; |ALUmod|Selector2~2  ; |ALUmod|Selector2~2  ; out0             ;
+; |ALUmod|Selector2~3  ; |ALUmod|Selector2~3  ; out0             ;
+; |ALUmod|Selector2~4  ; |ALUmod|Selector2~4  ; out0             ;
+; |ALUmod|Selector2~8  ; |ALUmod|Selector2~8  ; out0             ;
+; |ALUmod|Selector3~1  ; |ALUmod|Selector3~1  ; out0             ;
+; |ALUmod|Selector3~2  ; |ALUmod|Selector3~2  ; out0             ;
+; |ALUmod|Selector3~3  ; |ALUmod|Selector3~3  ; out0             ;
+; |ALUmod|Selector3~5  ; |ALUmod|Selector3~5  ; out0             ;
+; |ALUmod|Selector3~6  ; |ALUmod|Selector3~6  ; out0             ;
+; |ALUmod|Selector3~7  ; |ALUmod|Selector3~7  ; out0             ;
+; |ALUmod|Selector4~1  ; |ALUmod|Selector4~1  ; out0             ;
+; |ALUmod|Selector4~4  ; |ALUmod|Selector4~4  ; out0             ;
+; |ALUmod|Selector4~5  ; |ALUmod|Selector4~5  ; out0             ;
+; |ALUmod|Selector5~1  ; |ALUmod|Selector5~1  ; out0             ;
+; |ALUmod|Selector5~2  ; |ALUmod|Selector5~2  ; out0             ;
+; |ALUmod|Selector5~3  ; |ALUmod|Selector5~3  ; out0             ;
+; |ALUmod|Selector5~6  ; |ALUmod|Selector5~6  ; out0             ;
+; |ALUmod|Selector5~7  ; |ALUmod|Selector5~7  ; out0             ;
+; |ALUmod|Selector5~8  ; |ALUmod|Selector5~8  ; out0             ;
+; |ALUmod|Selector5~9  ; |ALUmod|Selector5~9  ; out0             ;
+; |ALUmod|Selector6~1  ; |ALUmod|Selector6~1  ; out0             ;
+; |ALUmod|Selector6~4  ; |ALUmod|Selector6~4  ; out0             ;
+; |ALUmod|Selector6~6  ; |ALUmod|Selector6~6  ; out0             ;
+; |ALUmod|Selector6~7  ; |ALUmod|Selector6~7  ; out0             ;
+; |ALUmod|Selector7~1  ; |ALUmod|Selector7~1  ; out0             ;
+; |ALUmod|Selector7~2  ; |ALUmod|Selector7~2  ; out0             ;
+; |ALUmod|Selector7~3  ; |ALUmod|Selector7~3  ; out0             ;
+; |ALUmod|Selector7~6  ; |ALUmod|Selector7~6  ; out0             ;
+; |ALUmod|Selector7~8  ; |ALUmod|Selector7~8  ; out0             ;
+; |ALUmod|LessThan0~0  ; |ALUmod|LessThan0~0  ; out0             ;
+; |ALUmod|LessThan0~1  ; |ALUmod|LessThan0~1  ; out0             ;
+; |ALUmod|LessThan0~2  ; |ALUmod|LessThan0~2  ; out0             ;
+; |ALUmod|LessThan0~3  ; |ALUmod|LessThan0~3  ; out0             ;
+; |ALUmod|LessThan0~4  ; |ALUmod|LessThan0~4  ; out0             ;
+; |ALUmod|LessThan0~5  ; |ALUmod|LessThan0~5  ; out0             ;
+; |ALUmod|LessThan0~6  ; |ALUmod|LessThan0~6  ; out0             ;
+; |ALUmod|LessThan0~7  ; |ALUmod|LessThan0~7  ; out0             ;
+; |ALUmod|LessThan0~8  ; |ALUmod|LessThan0~8  ; out0             ;
+; |ALUmod|LessThan0~9  ; |ALUmod|LessThan0~9  ; out0             ;
+; |ALUmod|LessThan0~10 ; |ALUmod|LessThan0~10 ; out0             ;
+; |ALUmod|LessThan0~11 ; |ALUmod|LessThan0~11 ; out0             ;
+; |ALUmod|LessThan0~12 ; |ALUmod|LessThan0~12 ; out0             ;
+; |ALUmod|LessThan0~13 ; |ALUmod|LessThan0~13 ; out0             ;
+; |ALUmod|LessThan0~14 ; |ALUmod|LessThan0~14 ; out0             ;
+; |ALUmod|LessThan0~15 ; |ALUmod|LessThan0~15 ; out0             ;
+; |ALUmod|LessThan0~16 ; |ALUmod|LessThan0~16 ; out0             ;
+; |ALUmod|LessThan0~17 ; |ALUmod|LessThan0~17 ; out0             ;
+; |ALUmod|LessThan0~18 ; |ALUmod|LessThan0~18 ; out0             ;
+; |ALUmod|LessThan0~19 ; |ALUmod|LessThan0~19 ; out0             ;
+; |ALUmod|LessThan0~20 ; |ALUmod|LessThan0~20 ; out0             ;
+; |ALUmod|LessThan0~21 ; |ALUmod|LessThan0~21 ; out0             ;
+; |ALUmod|LessThan0~22 ; |ALUmod|LessThan0~22 ; out0             ;
+; |ALUmod|LessThan0~23 ; |ALUmod|LessThan0~23 ; out0             ;
+; |ALUmod|LessThan0~24 ; |ALUmod|LessThan0~24 ; out0             ;
+; |ALUmod|LessThan0~25 ; |ALUmod|LessThan0~25 ; out0             ;
+; |ALUmod|LessThan0~26 ; |ALUmod|LessThan0~26 ; out0             ;
+; |ALUmod|LessThan0~27 ; |ALUmod|LessThan0~27 ; out0             ;
+; |ALUmod|LessThan0~28 ; |ALUmod|LessThan0~28 ; out0             ;
+; |ALUmod|Add0~0       ; |ALUmod|Add0~0       ; out0             ;
+; |ALUmod|Add0~1       ; |ALUmod|Add0~1       ; out0             ;
+; |ALUmod|Add0~2       ; |ALUmod|Add0~2       ; out0             ;
+; |ALUmod|Add0~3       ; |ALUmod|Add0~3       ; out0             ;
+; |ALUmod|Add0~4       ; |ALUmod|Add0~4       ; out0             ;
+; |ALUmod|Add0~5       ; |ALUmod|Add0~5       ; out0             ;
+; |ALUmod|Add0~6       ; |ALUmod|Add0~6       ; out0             ;
+; |ALUmod|Add0~7       ; |ALUmod|Add0~7       ; out0             ;
+; |ALUmod|Add0~8       ; |ALUmod|Add0~8       ; out0             ;
+; |ALUmod|Add0~9       ; |ALUmod|Add0~9       ; out0             ;
+; |ALUmod|Add0~10      ; |ALUmod|Add0~10      ; out0             ;
+; |ALUmod|Add1~0       ; |ALUmod|Add1~0       ; out0             ;
+; |ALUmod|Add1~1       ; |ALUmod|Add1~1       ; out0             ;
+; |ALUmod|Add1~2       ; |ALUmod|Add1~2       ; out0             ;
+; |ALUmod|Add1~3       ; |ALUmod|Add1~3       ; out0             ;
+; |ALUmod|Add1~4       ; |ALUmod|Add1~4       ; out0             ;
+; |ALUmod|Add1~5       ; |ALUmod|Add1~5       ; out0             ;
+; |ALUmod|Add1~6       ; |ALUmod|Add1~6       ; out0             ;
+; |ALUmod|Add1~7       ; |ALUmod|Add1~7       ; out0             ;
+; |ALUmod|Add1~8       ; |ALUmod|Add1~8       ; out0             ;
+; |ALUmod|Add1~9       ; |ALUmod|Add1~9       ; out0             ;
+; |ALUmod|Add1~10      ; |ALUmod|Add1~10      ; out0             ;
+; |ALUmod|Add1~11      ; |ALUmod|Add1~11      ; out0             ;
+; |ALUmod|Add1~12      ; |ALUmod|Add1~12      ; out0             ;
+; |ALUmod|Add1~13      ; |ALUmod|Add1~13      ; out0             ;
+; |ALUmod|Add1~14      ; |ALUmod|Add1~14      ; out0             ;
+; |ALUmod|Add1~15      ; |ALUmod|Add1~15      ; out0             ;
+; |ALUmod|Add1~16      ; |ALUmod|Add1~16      ; out0             ;
+; |ALUmod|Add1~17      ; |ALUmod|Add1~17      ; out0             ;
+; |ALUmod|Add1~18      ; |ALUmod|Add1~18      ; out0             ;
+; |ALUmod|Add1~19      ; |ALUmod|Add1~19      ; out0             ;
+; |ALUmod|Add1~20      ; |ALUmod|Add1~20      ; out0             ;
+; |ALUmod|Add1~21      ; |ALUmod|Add1~21      ; out0             ;
+; |ALUmod|Add1~22      ; |ALUmod|Add1~22      ; out0             ;
+; |ALUmod|Add1~23      ; |ALUmod|Add1~23      ; out0             ;
+; |ALUmod|Add1~24      ; |ALUmod|Add1~24      ; out0             ;
+; |ALUmod|Add1~25      ; |ALUmod|Add1~25      ; out0             ;
+; |ALUmod|Add1~26      ; |ALUmod|Add1~26      ; out0             ;
+; |ALUmod|Add1~27      ; |ALUmod|Add1~27      ; out0             ;
+; |ALUmod|Add1~28      ; |ALUmod|Add1~28      ; out0             ;
+; |ALUmod|Add1~29      ; |ALUmod|Add1~29      ; out0             ;
+; |ALUmod|Add1~30      ; |ALUmod|Add1~30      ; out0             ;
+; |ALUmod|Add1~31      ; |ALUmod|Add1~31      ; out0             ;
+; |ALUmod|Add1~32      ; |ALUmod|Add1~32      ; out0             ;
+; |ALUmod|Add2~0       ; |ALUmod|Add2~0       ; out0             ;
+; |ALUmod|Add2~1       ; |ALUmod|Add2~1       ; out0             ;
+; |ALUmod|Add2~2       ; |ALUmod|Add2~2       ; out0             ;
+; |ALUmod|Add2~3       ; |ALUmod|Add2~3       ; out0             ;
+; |ALUmod|Add2~4       ; |ALUmod|Add2~4       ; out0             ;
+; |ALUmod|Add2~5       ; |ALUmod|Add2~5       ; out0             ;
+; |ALUmod|Add2~6       ; |ALUmod|Add2~6       ; out0             ;
+; |ALUmod|Add2~7       ; |ALUmod|Add2~7       ; out0             ;
+; |ALUmod|Add2~8       ; |ALUmod|Add2~8       ; out0             ;
+; |ALUmod|Add2~9       ; |ALUmod|Add2~9       ; out0             ;
+; |ALUmod|Add2~10      ; |ALUmod|Add2~10      ; out0             ;
+; |ALUmod|Add2~11      ; |ALUmod|Add2~11      ; out0             ;
+; |ALUmod|Add2~12      ; |ALUmod|Add2~12      ; out0             ;
+; |ALUmod|Equal8~0     ; |ALUmod|Equal8~0     ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Nov 29 16:45:07 2025
+Info: Command: quartus_sim --simulation_results_format=VWF alumod -c alumod
+Info (324025): Using vector source file "C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/ALU MOD/alumodwaveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      29.66 %
+Info (328052): Number of transitions in simulation is 287
+Info (324045): Vector file alumod.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 267 megabytes
+    Info: Processing ended: Sat Nov 29 16:45:07 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

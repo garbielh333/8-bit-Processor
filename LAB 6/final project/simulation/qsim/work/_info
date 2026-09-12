@@ -1,0 +1,225 @@
+m255
+K3
+z0
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e MIXED_VERSIONS
+13
+cModel Technology
+Z1 dC:\altera\13.0sp1\Projects\COE328\LAB 6\final project\simulation\qsim
+T_opt
+!i145 1
+!i144 0
+!s110 1789248982
+V<QMe[bRi:bMmXPd6DGHk30
+04 24 17 work finalproject_vhd_vec_tst finalproject_arch 1
+=1-44fa6626d11b-6aa5c5d5-2fa-6de4
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U3 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+Efinalproject
+Z2 w1789248980
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Fl:z4XT4QeMENabFAZLcN1
+Z4 DPx10 cycloneive 21 cycloneive_components 0 22 G7f=dFn9TOAba<6b7AgXm2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 HeG`SlgMb6=o0zVGZnEz^3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 k4Yn[[d=9S17VVF>?>37I3
+!i122 10
+Z11 dC:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim
+Z12 8finalproject.vho
+Z13 Ffinalproject.vho
+l0
+L80 1
+VTV_:lhNA6Dng]]19dHmdK0
+!s100 N^ZHSzhPGb1S2?>TN34Bo1
+Z14 OL;C;2025.2;82
+32
+Z15 !s110 1789248981
+!i10b 1
+Z16 !s108 1789248981.000000
+Z17 !s90 -work|work|finalproject.vho|
+Z18 !s107 finalproject.vho|
+!i113 0
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 12 finalproject 0 22 TV_:lhNA6Dng]]19dHmdK0
+!i122 10
+l391
+L150 3535
+VCez^2iE<AiaDdTG0kIbLX1
+!s100 SfFdbU1lnE>WAMU4Yk8j:1
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Efinalproject_vhd_vec_tst
+Z21 w1789248979
+R8
+R9
+!i122 11
+R11
+Z22 8problem1waveform.vwf.vht
+Z23 Fproblem1waveform.vwf.vht
+l0
+L32 1
+VTH[FBK9K8Z:^dPJV=M9Sn3
+!s100 ?K0izXa7aRDiLEo]W]C:i3
+R14
+32
+R15
+!i10b 1
+R16
+Z24 !s90 -work|work|problem1waveform.vwf.vht|
+Z25 !s107 problem1waveform.vwf.vht|
+!i113 0
+R19
+R20
+Afinalproject_arch
+R8
+R9
+DEx4 work 24 finalproject_vhd_vec_tst 0 22 TH[FBK9K8Z:^dPJV=M9Sn3
+!i122 11
+l65
+L34 202
+V4VcNIi<:YUnC4TJ?lD6>C3
+!s100 SRN^ebE[??25FJ?^]lmAg1
+R14
+32
+R15
+!i10b 1
+R16
+R24
+R25
+!i113 0
+R19
+R20
+vfinalproject_vlg_check_tst
+!i10b 1
+!s100 1>nE8M@e>b9z[JQaBC2DQ2
+ITR:CWGIIQ]EIMT;H^jLjK1
+V7LeJ1aBECMeQOeO11oGPl1
+R1
+Z26 w1764174479
+Z27 8finalproject.vt
+Z28 Ffinalproject.vt
+L0 71
+Z29 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z30 !s108 1764174481.422000
+Z31 !s107 finalproject.vt|
+Z32 !s90 -work|work|finalproject.vt|
+!s101 -O0
+Z33 o-work work -O0
+vfinalproject_vlg_sample_tst
+!i10b 1
+!s100 fXdFFeja0ThT=bf6F`04?3
+I`@QeKRMcldVV?d`]S739K0
+VSn<4ROeG3iVbU9>09KYS73
+R1
+R26
+R27
+R28
+L0 29
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!s101 -O0
+R33
+vfinalproject_vlg_vec_tst
+!i10b 1
+!s100 WQMaRRQO=>jhjOB:XJfG93
+IfP8KIle1CFbkTDE^dz<o<2
+V21i0mgTmFHPm>2PnUjSdB3
+R1
+R26
+R27
+R28
+L0 1136
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!s101 -O0
+R33
+Ehard_block
+R2
+R5
+R3
+R7
+R8
+R9
+R4
+!i122 10
+R11
+R12
+R13
+l0
+L35 1
+VMK=A;40ce7^o]bAk<=Mc12
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Astructure
+R5
+R3
+R7
+R8
+R9
+R4
+DEx4 work 10 hard_block 0 22 MK=A;40ce7^o]bAk<=Mc12
+!i122 10
+l65
+L51 20
+VK@^2ESJkSeHg`X4Zi5Q<11
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20

@@ -1,0 +1,96 @@
+m255
+K4
+z2
+!s8c locked
+!s11e vcom 2025.2 2025.05, May 31 2025
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+dD:/workdir/bata/job_data/jobid.3230536/modeltech
+Penv
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 2
+Z1 w1748706437
+Z2 d$QUESTASIM_DIR/..
+Z3 8vhdl_src/std/env.vhd
+Z4 Fvhdl_src/std/env.vhd
+l0
+L3 400
+Vg[fj8WJKOa<0Y`zWY3UD70
+!s100 g[fj8WJKOa<0Y`zWY3UD70
+Z5 OL;C;2025.2;82
+37
+b1
+Z6 !s110 1748706758
+!i10b 1
+!i113 1
+Z7 o-suppress 12110 -debuglib -2019 -work std -dirpath {$QUESTASIM_DIR/..}
+Z8 tExplicit 1 CvgOpt 0 defaultOptions 1083072464
+Bbody
+DPx4 work 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
+R0
+!i122 2
+l0
+L406 725
+V2c8?5ZloY:5Z0D2X4SVl[2
+!s100 2c8?5ZloY:5Z0D2X4SVl[2
+R5
+37
+R6
+!i10b 1
+!i113 1
+R7
+R8
+Pstandard
+!i122 0
+R1
+R2
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8 86
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R5
+33
+Z9 !s110 1748706757
+!i10b 1
+!i113 1
+o-suppress 12110 -debuglib -s -2008 -work std -dirpath {$QUESTASIM_DIR/..}
+R8
+Ptextio
+!i122 1
+Z10 w1733859420
+R2
+Z11 8vhdl_src/std/textio.vhd
+Z12 Fvhdl_src/std/textio.vhd
+l0
+L1 166
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R5
+33
+b1
+R9
+!i10b 1
+!i113 1
+Z13 o-suppress 12110 -debuglib -2008 -work std -dirpath {$QUESTASIM_DIR/..}
+R8
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 1
+l0
+L188 428
+Vi7e8j^OJ=<e;`Z=oS6MV82
+!s100 i7e8j^OJ=<e;`Z=oS6MV82
+R5
+33
+R9
+!i10b 1
+!i113 1
+R13
+R8

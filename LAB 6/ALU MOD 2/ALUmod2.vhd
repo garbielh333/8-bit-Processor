@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+entity ALUmod2 is
+port(	clock:		in STD_LOGIC;					--input clock signal
+		A,B:			in UNSIGNED(7 DOWNTO 0);	--8-bit inputs from latches A and B
+		student_id:	in UNSIGNED(3 DOWNTO 0);	--4 bit student id from FSM
+		OP:			in UNSIGNED(15 DOWNTO 0);	--16 bit selector for operation from Decoder
+		R:			out UNSIGNED(3 DOWNTO 0));	--lower 4-bits of 8-bit result output
+end ALUmod2;
+architecture calculation of ALUmod2 is		--temporary signal declarations
+signal Reg1, Reg2:	unsigned(7 DOWNTO 0) := (others => '0');
+begin
+Reg1 <= A;	--temporarily store A in Reg1 local variable
+Reg2 <= B;	--temporarily store B in Reg2 local variable
+process(Clock, OP)
+begin
+	if(rising_edge(Clock)) THEN	--do the calculation @ positive edge of clock cycle
+		case OP is						-- check for odd (y/n)
+			when OTHERS =>
+				if student_id(0) ='1' then
+					R <= "0001";
+				else
+					R <= "0000";
+				end if;
+		end case;
+	end if;
+end process;
+end calculation;
+				

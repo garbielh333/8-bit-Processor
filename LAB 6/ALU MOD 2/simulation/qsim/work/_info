@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\Projects\COE328\LAB 6 final\LAB 6\ALU MOD 2\simulation\qsim
+vALUmod2
+Z1 !s100 97U[>i7Xe8TLPU70jUhSZ0
+Z2 I`E[_T8C67WOeI6n;[3P@52
+Z3 VUE>K:QZ^nBI]feLPLmYkf2
+Z4 dC:\altera\13.0sp1\Projects\COE328\LAB 6 final\LAB 6\ALU MOD 2\simulation\qsim
+Z5 w1764463006
+Z6 8ALUmod2.vo
+Z7 FALUmod2.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ALUmod2.vo|
+Z10 o-work work -O0
+Z11 n@a@l@umod2
+!i10b 1
+!s85 0
+Z12 !s108 1764463006.809000
+Z13 !s107 ALUmod2.vo|
+!s101 -O0
+vALUmod2_vlg_check_tst
+!i10b 1
+Z14 !s100 7VCzV8ZbbKh7IY53dzjR[3
+Z15 I?Y2H6>>?M_]=m;<O_6D?:3
+Z16 VJ0a;8JgBfjV2Wf9W]Z83o2
+R4
+R5
+Z17 8ALUmod2.vt
+Z18 FALUmod2.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1764463006.860000
+Z20 !s107 ALUmod2.vt|
+Z21 !s90 -work|work|ALUmod2.vt|
+!s101 -O0
+R10
+Z22 n@a@l@umod2_vlg_check_tst
+vALUmod2_vlg_sample_tst
+!i10b 1
+Z23 !s100 ?6UmLz92lhFV^o]7?kI@B3
+Z24 I8d:TFacXWTFMX2Z59KIhV1
+Z25 VYzHj1S:DVIG[U1NQS13C:1
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@a@l@umod2_vlg_sample_tst
+vALUmod2_vlg_vec_tst
+!i10b 1
+!s100 zg8Ken41HFKbFjoTdS81i2
+IVDjbP9SL9P0dini?D5JfV2
+Z27 V4ZD^^OHL:1k2;0@Q3VVgE3
+R4
+R5
+R17
+R18
+Z28 L0 217
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@a@l@umod2_vlg_vec_tst

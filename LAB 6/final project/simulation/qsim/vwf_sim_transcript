@@ -1,0 +1,354 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/altera_lite/25.1std/questa_fse/win64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off finalproject -c finalproject --vector_source="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/problem1waveform.vwf" --testbench_file="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/problem1waveform.vwf.vht"
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Sep 12 17:36:19 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off finalproject -c finalproject --vector_source="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/problem1waveform.vwf" --testbench_file="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/problem1waveform.vwf.vht"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+g output pin "R_last_four[3]" in vector source file when writing test bench files
+
+nded: Sat Sep 12 17:36:19 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/" finalproject -c finalproject
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Sat Sep 12 17:36:20 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/" finalproject -c finalproject
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file finalproject.vho in folder "C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4676 megabytes
+    Info: Processing ended: Sat Sep 12 17:36:20 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/finalproject.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/altera_lite/25.1std/questa_fse/win64//vsim -c -do finalproject.do
+
+Reading pref.tcl
+
+
+# 2025.2
+
+
+# do finalproject.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Errors: 0, Warnings: 1
+
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+
+# Start time: 17:36:21 on Sep 12,2026
+# vcom -work work finalproject.vho 
+# ** Note: (vcom-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Loading package VITAL_Timing
+
+# -- Loading package VITAL_Primitives
+
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+
+# -- Compiling entity hard_block
+
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+
+# -- Loading package altera_primitives_components
+
+# -- Compiling entity finalproject
+
+# -- Compiling architecture structure of finalproject
+
+# End time: 17:36:21 on Sep 12,2026, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+
+# Start time: 17:36:21 on Sep 12,2026
+# vcom -work work problem1waveform.vwf.vht 
+# ** Note: (vcom-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+# -- Compiling entity finalproject_vhd_vec_tst
+
+# -- Compiling architecture finalproject_arch of finalproject_vhd_vec_tst
+
+# End time: 17:36:21 on Sep 12,2026, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# ** Note: (vsim-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.finalproject_vhd_vec_tst 
+# Start time: 17:36:21 on Sep 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.finalproject_vhd_vec_tst(finalproject_arch)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.finalproject(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)#1
+# Loading cycloneive.cycloneive_io_ibuf(arch)#1
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)#1
+# Loading cycloneive.cycloneive_ena_reg(behave)#1
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#1
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#2
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#3
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#4
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#5
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#6
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#7
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#8
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#9
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#10
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#11
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#12
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#13
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#14
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#15
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#16
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#17
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#18
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#19
+# Loading altera.dffeas(vital_dffeas)#4
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#20
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#21
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#22
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#23
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#24
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#25
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#26
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#27
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#28
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#29
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#30
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#31
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#32
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#33
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#34
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#35
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#36
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#37
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#38
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#39
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#40
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#41
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#42
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#43
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#44
+# Loading altera.dffeas(vital_dffeas)#5
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#45
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#46
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#47
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#48
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#49
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#50
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#51
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#52
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#53
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#54
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#55
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#56
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#57
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#58
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#59
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#60
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#61
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#62
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#63
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#64
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#65
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#66
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#67
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#68
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#69
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#70
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#71
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#72
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#73
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#74
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#75
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#76
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#77
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#78
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#79
+# Loading altera.dffeas(vital_dffeas)#6
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#80
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#81
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#82
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#83
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#84
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#85
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#86
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#87
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#88
+
+# after#38
+
+# End time: 17:36:23 on Sep 12,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/problem1waveform.vwf...
+
+Reading C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/finalproject.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: R1[3] - signal not found in VCD.
+
+Warning: R1[2] - signal not found in VCD.
+
+Warning: R1[1] - signal not found in VCD.
+
+Warning: R1[0] - signal not found in VCD.
+
+Warning: R2[3] - signal not found in VCD.
+
+Warning: R2[2] - signal not found in VCD.
+
+Warning: R2[1] - signal not found in VCD.
+
+Warning: R2[0] - signal not found in VCD.
+
+Warning: op_code[15] - signal not found in VCD.
+
+Warning: op_code[14] - signal not found in VCD.
+
+Warning: op_code[13] - signal not found in VCD.
+
+Warning: op_code[12] - signal not found in VCD.
+
+Warning: op_code[11] - signal not found in VCD.
+
+Warning: op_code[10] - signal not found in VCD.
+
+Warning: op_code[9] - signal not found in VCD.
+
+Warning: op_code[8] - signal not found in VCD.
+
+Warning: op_code[7] - signal not found in VCD.
+
+Warning: op_code[6] - signal not found in VCD.
+
+Warning: op_code[5] - signal not found in VCD.
+
+Warning: op_code[4] - signal not found in VCD.
+
+Warning: op_code[3] - signal not found in VCD.
+
+Warning: op_code[2] - signal not found in VCD.
+
+Warning: op_code[1] - signal not found in VCD.
+
+Warning: op_code[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/altera/13.0sp1/Projects/COE328/LAB 6 final/LAB 6/final project/simulation/qsim/finalproject_20260912173624.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

@@ -1,0 +1,16 @@
+|sevenseggmod
+bcd[0] => leds[4].DATAIN
+bcd[0] => leds[1].DATAIN
+bcd[0] => leds[5].DATAIN
+bcd[1] => ~NO_FANOUT~
+bcd[2] => ~NO_FANOUT~
+bcd[3] => ~NO_FANOUT~
+leds[6] <= <GND>
+leds[5] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= <GND>
+leds[2] <= <GND>
+leds[1] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= <VCC>
+
+
